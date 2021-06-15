@@ -1,0 +1,624 @@
+// Utilities
+//@import "C:/Users/facun/Documents/Coderhouse/Desafio12/utilities/variables";
+
+@use "utilities/variables";
+@use "utilities/mixins";
+
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+html {
+    font-size: 62.5%;
+    padding: 0%;
+  }
+
+
+
+/* Logo */
+
+.logoImage{
+    width: 150px;
+    height: auto;
+    padding-left: 0.5%;
+    padding-top: 0.7%;
+}
+
+/* Menu  Home Page*/
+
+.miMenu ul{
+    display: inline-block;
+    width: 100%;
+
+    li{
+        display: inline-block;
+        position: relative;
+
+        a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            transition: all ease 0.3s;
+            font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+        
+        &:hover{
+            background-color: red;
+            color: black !important;
+        }
+        }
+
+        .submenu ul{
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            padding-left: 0;
+            min-width: 180px;
+            display: none;
+
+            li a{
+                color: #000;
+                width: 160px;
+                @include mixins.flexbox(flex, left);
+            }
+        } 
+        .submenu:hover ul{
+            display: block;
+        }
+    }    
+}
+
+/* Menu Other Pages */
+
+.nextMenu ul{
+    display: inline-block;
+    width: 100%;
+
+    li{
+        display: inline-block;
+        position: relative;
+
+        a{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            transition: all ease 0.3s;
+            font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+
+            &:hover{
+                background-color: red;
+                color: #fff !important;
+            }
+        }
+
+        .submenu ul{
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            padding-left: 0;
+            min-width: 180px;
+            display: none;
+
+            li a{
+                color: #000;
+                width: 160px;
+                @include mixins.flexbox(flex, left);
+                font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+            }
+        }
+        
+        .submenu:hover ul{
+            display: block;
+        }
+    }
+}
+
+
+/* Header */
+header{
+    width: 100%;
+    height: variables.$headertamanio * 2 + 10rem;
+    padding: 0%;
+    background-image: url("https://www.thefashionlaw.com/wp-content/uploads/2018/02/kanye-west-x-adidas-originals-yeezy-season-1-lookbook-9-1200x800-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* Menu */
+.miMenu{
+    display: inline;    
+    position: relative;
+    float:right;
+}
+
+/* Menu No Homepage */
+.nextMenu{
+    display: inline;    
+    position: relative;
+    float:right;
+}
+
+/* Enlaces Menu Navegable */
+nav a {
+    color: brown;
+    font-size: 2rem;
+}
+
+/* Menu Navegable */
+nav{
+    text-align: right;
+    margin-right: 5%;
+    padding: variables.$padding;
+}
+
+/* Titulo en el Header */
+.textoLanding{
+    display: inline;
+    position: relative;
+    z-index: 3;
+}
+
+#textoLanding{
+    font-size: variables.$headertamanio - 25rem;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+
+    &:hover{
+        animation: estirado 2s infinite;
+    }
+}
+
+/* Texto Listen Pagina Musica */
+.listen{
+    padding-top: 7%;
+}
+
+
+/* Animacion */
+@keyframes estirado {
+    0% { transform: scale(1, 1);
+        color: white;
+    }
+    35% {
+        transform: scale(1.3, 1);
+        color: blueviolet;
+    }
+    50% {
+        transform: scale(1.5, 1);
+        color: lightblue;
+    }
+    85% {
+        transform: scale(1.3, 1);
+        color: blueviolet;
+    }
+    100% { transform: scale(1, 1);
+    color: white;
+    }
+  }
+
+
+main{
+    padding-bottom: 5%;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: black;
+    padding: variables.$padding;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+}
+
+.h2{
+    font-size: 90rem / variables.$headertamanio + rem;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    padding: variables.$padding;
+    color: black;
+}
+
+div h2{
+    @include mixins.paddingvertical(3%, 5%);
+}
+
+section div button{
+    color: variables.$colorbotones;
+    background-color: chocolate;
+}
+
+main button{
+    color: variables.$colorbotones;
+    background-color: chocolate;
+}
+
+/* Nombre de los productos */
+.nombreProducto{
+    font-size: 2rem;
+    font-family: 'Antonio', sans-serif;
+    letter-spacing: 0.4rem;
+
+}
+
+
+h3{
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+/* Lorem Terminos y Condiciones */
+footer p{
+    font-size: 1.7rem;
+}
+
+/* Tienda */
+.tienda{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.tiendaHomePage{
+    margin-top: 5%;
+    @include mixins.flexbox(flex, space-around);
+    padding-bottom: 5%;
+}
+
+
+/* Talles */
+.talles{
+    font-size: 1.5rem;
+}
+
+/* Texto Formulario */
+.miFormulario{
+    font-size: 2rem;
+    box-sizing:border-box;
+    margin-top: 2%;
+    padding: variables.$padding;
+}
+
+.botonFormulario{
+    background-color: cyan;
+    color: darkmagenta;
+}
+
+/* VIP */
+#tituloVIP{
+    padding-top: 9%;
+    color: darkslateblue;
+    @include mixins.flexbox(flex, center);
+}
+
+#textoVIP{
+    font-size: 2rem;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+
+}
+
+#botonVIP{
+    color: variables.$colorbotones;
+    background-image: linear-gradient(red, white);
+    font-size: 3rem;
+    padding: 10px 24px;
+    margin: auto;
+}
+
+/* Parrafo en el VIP */
+.textoVIP{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+/* Margen */
+.margenVIP{
+    text-align: center;
+}
+
+/* Imagenes y Texto VIP */
+.claseVIP{
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding: variables.$padding;
+}
+
+/* Mas productos tienda */
+.moreProducts{
+    font-size: 2rem;
+    padding-bottom: 3%;
+    padding-left: variables.$padding;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+
+}
+
+
+/* Texto Carrito */
+.comprameYa{
+    font-size: 2rem;
+    padding: variables.$padding;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+
+}
+
+.redesSociales{
+        padding: 10px;
+        font-size: 50px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+}
+
+
+/* Display Footer */
+#seccionFooter{
+    @include mixins.flexbox(flex, space-around);
+    padding-bottom: 3%;
+    background-image: linear-gradient(lightblue, white);
+}
+
+/* Terminos y Condiciones */
+#askUs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+/* Texto e Iconos Redes Sociales */
+.followUs{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1.3%;
+    padding-top: 29%;
+}
+
+#seccionRedesSociales{
+    padding-left: 5%;
+    @include mixins.flexbox(flex, center);
+    flex-direction: column;
+}
+
+/* Titulo Tienda (en seccion musica) */
+.storeTitle{
+    @include mixins.paddingvertical(7%, 3%);
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    font-size: 3.5rem;
+    padding-left: variables.$padding;
+}
+
+/* Apple Music Spotify */
+.reproductor{
+    padding: variables.$padding;
+    display: inline-block;
+    padding-bottom: 3%;
+}
+
+
+/* Display Tienda en Musica */
+#tiendaMusica{
+    @include mixins.flexbox(flex, space-around);
+    padding-bottom: 7%;
+}
+
+/* Texto PRODUCTS */
+.shopProducts{
+    @include mixins.paddingvertical(3%, 7%);
+}
+
+/* TABLA TALLES */
+.tablaTalles{
+    padding: variables.$padding;
+}
+
+/* Display Tienda en Shop */
+#tiendaShop{
+    @include mixins.flexbox(flex, space-around);
+    @include mixins.paddingvertical(7%, 5%);
+}
+
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Texto en Carrito */
+.emptyCart{
+    padding-top: 7%;
+}
+
+/* Media Query Mobile */
+@media only screen and (max-width: 615px){
+    .tiendaHomePage{
+        @include mixins.flexbox(flex, center);
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .tiendaHomePage div{
+        text-align: center;
+        margin: 5%;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #seccionFooter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followUs{
+        @include mixins.flexbox(flex, center);
+        margin: 0;
+    }
+
+    .iconosRedes{
+        @include mixins.flexbox(flex, center);
+    }
+
+    #askUs{
+        @include mixins.flexbox(flex, center);
+        flex-wrap: nowrap;
+        padding: 7%;
+    }
+
+    header{
+        height: variables.$headertamanio;
+        background-size: 120%;
+        background-repeat: no repeat;
+        background-position: top center;
+    }
+
+    #textoLanding{
+        padding-top: 33%;
+        @include mixins.flexbox(flex, center);
+        white-space: nowrap;
+        font-size: 3rem;
+        align-items: center;
+    }
+
+    .miMenu{
+        visibility: hidden;
+    }
+}
+
+/* MQ Tablet */
+@media only screen and (min-width: 615px) and (max-width: 1024px){
+    .tiendaHomePage{
+        @include mixins.flexbox(flex, center);
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    .tiendaHomePage div{
+        text-align: center;
+        margin: 5%;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #seccionFooter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followUs{
+        @include mixins.flexbox(flex, center);
+        margin: 0;
+    }
+
+    .iconosRedes{
+        @include mixins.flexbox(flex, center);
+    }
+
+    #askUs{
+        @include mixins.flexbox(flex, center);
+        flex-wrap: nowrap;
+        padding: 7%;
+    }
+
+    header{
+        height: variables.$headertamanio;
+        background-size: 120%;
+        background-repeat: no repeat;
+        background-position: top center;
+    }
+
+    #textoLanding{
+        padding-top: 18%;
+        @include mixins.flexbox(flex, center);
+        white-space: nowrap;
+        font-size: 3rem;
+        align-items: center;
+    }
+
+}
+
+
+/* Navbar BOOTSTRAP */
+.nav-link{
+    margin-left:20px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    transition: all ease 0.3s;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover {
+    color: black;
+    background-color: red;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    transition: all ease 0.3s;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .show>.nav-link:hover {
+    color: black;
+    background-color: red;
+}
+
+
+/* Texto en Connect */
+.connectText{
+    @include mixins.paddingvertical(0%, 6%);
+}
+
+/* Spotify/AppleMusic/Youtube */
+.seccionMultimedia{
+    @include mixins.flexbox(flex, space-evenly);
+    flex-wrap: wrap;
+}
+
+
+/* Animacion Dropdown en Navbar */
+.navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    margin-top: 0;
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: #fff;
+}
+
+.navbar .dropdown-menu.fade-down {
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+}
+
+.navbar .dropdown-menu.fade-up {
+    top: 180%;
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: rotateX(0deg);
+}

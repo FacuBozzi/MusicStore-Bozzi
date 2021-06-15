@@ -1,0 +1,9 @@
+@mixin flexbox($flex, $justifycontent) {
+    display: $flex;
+    justify-content: $justifycontent;
+}
+
+@mixin paddingvertical($paddingbottom, $paddingtop) {
+    padding-bottom: $paddingbottom;
+    padding-top: $paddingtop;
+}
