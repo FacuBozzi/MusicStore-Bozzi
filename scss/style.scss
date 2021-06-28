@@ -19,7 +19,7 @@ html {
 
 /* Logo */
 
-.logoImage{
+.logo-image{
     width: 150px;
     height: auto;
     padding-left: 0.5%;
@@ -28,7 +28,7 @@ html {
 
 /* Menu  Home Page*/
 
-.miMenu ul{
+.mi-menu ul{
     display: inline-block;
     width: 100%;
 
@@ -72,7 +72,7 @@ html {
 
 /* Menu Other Pages */
 
-.nextMenu ul{
+.next-menu ul{
     display: inline-block;
     width: 100%;
 
@@ -129,14 +129,14 @@ header{
 }
 
 /* Menu */
-.miMenu{
+.mi-menu{
     display: inline;    
     position: relative;
     float:right;
 }
 
 /* Menu No Homepage */
-.nextMenu{
+.next-menu{
     display: inline;    
     position: relative;
     float:right;
@@ -156,21 +156,18 @@ nav{
 }
 
 /* Titulo en el Header */
-.textoLanding{
+.texto-landing{
     display: inline;
     position: relative;
     z-index: 3;
 }
 
-#textoLanding{
+#texto-landing{
     font-size: variables.$headertamanio - 25rem;
     color: white;
     text-align: center;
     padding-top: 20%;
 
-    &:hover{
-        animation: estirado 2s infinite;
-    }
 }
 
 /* Texto Listen Pagina Musica */
@@ -179,7 +176,7 @@ nav{
 }
 
 
-/* Animacion */
+/* Animacion (Sacada del proyecto final ya que no le agregaba nada a la pagina, dejo el codigo por si quieren verlo) */
 @keyframes estirado {
     0% { transform: scale(1, 1);
         color: white;
@@ -235,7 +232,7 @@ main button{
 }
 
 /* Nombre de los productos */
-.nombreProducto{
+.nombre-producto{
     font-size: 2rem;
     font-family: 'Antonio', sans-serif;
     letter-spacing: 0.4rem;
@@ -263,7 +260,7 @@ footer p{
     margin-bottom: 10%;
 }
 
-.tiendaHomePage{
+.tienda-homepage{
     margin-top: 5%;
     @include mixins.flexbox(flex, space-around);
     padding-bottom: 5%;
@@ -276,32 +273,32 @@ footer p{
 }
 
 /* Texto Formulario */
-.miFormulario{
+.mi-formulario{
     font-size: 2rem;
     box-sizing:border-box;
     margin-top: 2%;
     padding: variables.$padding;
 }
 
-.botonFormulario{
+.boton-formulario{
     background-color: cyan;
     color: darkmagenta;
 }
 
 /* VIP */
-#tituloVIP{
+#titulo-vip{
     padding-top: 9%;
     color: darkslateblue;
     @include mixins.flexbox(flex, center);
 }
 
-#textoVIP{
+#texto-vip{
     font-size: 2rem;
     font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 
 }
 
-#botonVIP{
+#boton-vip{
     color: variables.$colorbotones;
     background-image: linear-gradient(red, white);
     font-size: 3rem;
@@ -310,7 +307,7 @@ footer p{
 }
 
 /* Parrafo en el VIP */
-.textoVIP{
+.texto-vip{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 3%;
@@ -318,19 +315,19 @@ footer p{
 }
 
 /* Margen */
-.margenVIP{
+.margen-vip{
     text-align: center;
 }
 
 /* Imagenes y Texto VIP */
-.claseVIP{
+.clase-vip{
     margin-top: 5%;
     margin-bottom: 4%;
     padding: variables.$padding;
 }
 
 /* Mas productos tienda */
-.moreProducts{
+.more-products{
     font-size: 2rem;
     padding-bottom: 3%;
     padding-left: variables.$padding;
@@ -340,14 +337,14 @@ footer p{
 
 
 /* Texto Carrito */
-.comprameYa{
+.comprame-ya{
     font-size: 2rem;
     padding: variables.$padding;
     font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 
 }
 
-.redesSociales{
+.redes-sociales{
         padding: 10px;
         font-size: 50px;
         width: 50px;
@@ -358,14 +355,14 @@ footer p{
 
 
 /* Display Footer */
-#seccionFooter{
+#seccion-footer{
     @include mixins.flexbox(flex, space-around);
     padding-bottom: 3%;
     background-image: linear-gradient(lightblue, white);
 }
 
 /* Terminos y Condiciones */
-#askUs{
+#ask-us{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     word-spacing: 3px;
@@ -376,21 +373,21 @@ footer p{
 
 
 /* Texto e Iconos Redes Sociales */
-.followUs{
+.follow-us{
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 1.3%;
     padding-top: 29%;
 }
 
-#seccionRedesSociales{
+#seccion-redes-sociales{
     padding-left: 5%;
     @include mixins.flexbox(flex, center);
     flex-direction: column;
 }
 
 /* Titulo Tienda (en seccion musica) */
-.storeTitle{
+.store-title{
     @include mixins.paddingvertical(7%, 3%);
     font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
     font-size: 3.5rem;
@@ -406,23 +403,23 @@ footer p{
 
 
 /* Display Tienda en Musica */
-#tiendaMusica{
+#tienda-musica{
     @include mixins.flexbox(flex, space-around);
     padding-bottom: 7%;
 }
 
 /* Texto PRODUCTS */
-.shopProducts{
+.shop-products{
     @include mixins.paddingvertical(3%, 7%);
 }
 
 /* TABLA TALLES */
-.tablaTalles{
+.tabla-talles{
     padding: variables.$padding;
 }
 
 /* Display Tienda en Shop */
-#tiendaShop{
+#tienda-shop{
     @include mixins.flexbox(flex, space-around);
     @include mixins.paddingvertical(7%, 5%);
 }
@@ -437,19 +434,19 @@ footer p{
 }
 
 /* Texto en Carrito */
-.emptyCart{
+.empty-cart{
     padding-top: 7%;
 }
 
 /* Media Query Mobile */
 @media only screen and (max-width: 615px){
-    .tiendaHomePage{
+    .tienda-homepage{
         @include mixins.flexbox(flex, center);
         flex-direction: column;
         align-content: space-evenly;
     }
 
-    .tiendaHomePage div{
+    .tienda-homepage div{
         text-align: center;
         margin: 5%;
     }
@@ -458,21 +455,21 @@ footer p{
         text-align: center;
     }
 
-    #seccionFooter{
+    #seccion-footer{
         display: flex;
         flex-direction: column;
     }
 
-    .followUs{
+    .follow-us{
         @include mixins.flexbox(flex, center);
         margin: 0;
     }
 
-    .iconosRedes{
+    .iconos-redes{
         @include mixins.flexbox(flex, center);
     }
 
-    #askUs{
+    #ask-us{
         @include mixins.flexbox(flex, center);
         flex-wrap: nowrap;
         padding: 7%;
@@ -485,7 +482,7 @@ footer p{
         background-position: top center;
     }
 
-    #textoLanding{
+    #texto-landing{
         padding-top: 33%;
         @include mixins.flexbox(flex, center);
         white-space: nowrap;
@@ -493,20 +490,20 @@ footer p{
         align-items: center;
     }
 
-    .miMenu{
+    .mi-menu{
         visibility: hidden;
     }
 }
 
 /* MQ Tablet */
 @media only screen and (min-width: 615px) and (max-width: 1024px){
-    .tiendaHomePage{
+    .tienda-homepage{
         @include mixins.flexbox(flex, center);
         flex-direction: column;
         align-content: space-evenly;
     }
 
-    .tiendaHomePage div{
+    .tienda-homepage div{
         text-align: center;
         margin: 5%;
     }
@@ -515,21 +512,21 @@ footer p{
         text-align: center;
     }
 
-    #seccionFooter{
+    #seccion-footer{
         display: flex;
         flex-direction: column;
     }
 
-    .followUs{
+    .follow-us{
         @include mixins.flexbox(flex, center);
         margin: 0;
     }
 
-    .iconosRedes{
+    .iconos-redes{
         @include mixins.flexbox(flex, center);
     }
 
-    #askUs{
+    #ask-us{
         @include mixins.flexbox(flex, center);
         flex-wrap: nowrap;
         padding: 7%;
@@ -542,7 +539,7 @@ footer p{
         background-position: top center;
     }
 
-    #textoLanding{
+    #texto-landing{
         padding-top: 18%;
         @include mixins.flexbox(flex, center);
         white-space: nowrap;
@@ -581,12 +578,12 @@ footer p{
 
 
 /* Texto en Connect */
-.connectText{
+.connect-text{
     @include mixins.paddingvertical(0%, 6%);
 }
 
 /* Spotify/AppleMusic/Youtube */
-.seccionMultimedia{
+.seccion-multimedia{
     @include mixins.flexbox(flex, space-evenly);
     flex-wrap: wrap;
 }

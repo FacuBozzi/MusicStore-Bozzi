@@ -1,122 +1,102 @@
-*{
+* {
     padding: 0;
-    margin:0;
-}
-
-html {
+    margin: 0;
+  }
+  
+  html {
     font-size: 62.5%;
     padding: 0%;
   }
-
-
-/* Logo */
-
-.logoImage{
+  
+  /* Logo */
+  .logoImage {
     width: 150px;
     height: auto;
     padding-left: 0.5%;
     padding-top: 0.7%;
-}
-
-
-/* Menu  Home Page*/
-
-.miMenu ul{
+  }
+  
+  /* Menu  Home Page*/
+  .miMenu ul {
     display: inline-block;
     width: 100%;
-}
-
-.miMenu ul li{
+  }
+  .miMenu ul li {
     display: inline-block;
     position: relative;
-}
-
-.miMenu ul li a{
+  }
+  .miMenu ul li a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     padding: 15px;
     transition: all ease 0.3s;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-}
-
-.miMenu ul li a:hover{
-   background-color: red;
-   color: black !important;
-}
-
-.miMenu ul li.submenu ul{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  .miMenu ul li a:hover {
+    background-color: red;
+    color: black !important;
+  }
+  .miMenu ul li .submenu ul {
     background-color: #fff;
     position: absolute;
     left: 0;
     padding-left: 0;
     min-width: 180px;
     display: none;
-}
-
-.miMenu ul li.submenu ul li a{
+  }
+  .miMenu ul li .submenu ul li a {
     color: #000;
     width: 160px;
     display: flex;
     justify-content: left;
-}
-
-.miMenu ul li.submenu:hover ul{
+  }
+  .miMenu ul li .submenu:hover ul {
     display: block;
-}
-
-/* Menu Other Pages */
-
-.nextMenu ul{
+  }
+  
+  /* Menu Other Pages */
+  .nextMenu ul {
     display: inline-block;
     width: 100%;
-}
-
-.nextMenu ul li{
+  }
+  .nextMenu ul li {
     display: inline-block;
     position: relative;
-}
-
-.nextMenu ul li a{
+  }
+  .nextMenu ul li a {
     display: inline-block;
     color: black;
     text-decoration: none;
     padding: 15px;
     transition: all ease 0.3s;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
-}
-
-.nextMenu ul li a:hover{
-   background-color: red;
-   color: #fff !important;
-}
-
-.nextMenu ul li.submenu ul{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  .nextMenu ul li a:hover {
+    background-color: red;
+    color: #fff !important;
+  }
+  .nextMenu ul li .submenu ul {
     background-color: #fff;
     position: absolute;
     left: 0;
     padding-left: 0;
     min-width: 180px;
     display: none;
-}
-
-.nextMenu ul li.submenu ul li a{
+  }
+  .nextMenu ul li .submenu ul li a {
     color: #000;
     width: 160px;
     display: flex;
     justify-content: left;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
-}
-
-.nextMenu ul li.submenu:hover ul{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  .nextMenu ul li .submenu:hover ul {
     display: block;
-}
-
-
-/* Header */
-header{
+  }
+  
+  /* Header */
+  header {
     width: 100%;
     height: 70rem;
     padding: 0%;
@@ -124,474 +104,503 @@ header{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
-}
-
-/* Menu */
-.miMenu{
-    display: inline;    
+  }
+  
+  /* Menu */
+  .miMenu {
+    display: inline;
     position: relative;
-    float:right;
-}
-
-/* Menu No Homepage */
-.nextMenu{
-    display: inline;    
+    float: right;
+  }
+  
+  /* Menu No Homepage */
+  .nextMenu {
+    display: inline;
     position: relative;
-    float:right;
-}
-
-
-/* Enlaces Menu Navegable */
-nav a {
+    float: right;
+  }
+  
+  /* Enlaces Menu Navegable */
+  nav a {
     color: brown;
     font-size: 2rem;
-}
-
-/* Menu Navegable */
-nav{
+  }
+  
+  /* Menu Navegable */
+  nav {
     text-align: right;
     margin-right: 5%;
     padding: 1%;
-}
-
-/* Titulo en el Header */
-
-.textoLanding{
+  }
+  
+  /* Titulo en el Header */
+  .textoLanding {
     display: inline;
     position: relative;
     z-index: 3;
-}
-
-#textoLanding{
+  }
+  
+  #textoLanding {
     font-size: 5rem;
-    color: crimson;
+    color: white;
     text-align: center;
     padding-top: 20%;
-}
-
-#textoLanding:hover{
+  }
+  #textoLanding:hover {
     animation: estirado 2s infinite;
-}
-
-/* Texto Listen Pagina Musica */
-
-.listen{
+  }
+  
+  /* Texto Listen Pagina Musica */
+  .listen {
     padding-top: 7%;
-}
-
-/* Animacion */
-
-@keyframes estirado {
-    0% { transform: scale(1, 1);
-        color: crimson;
+  }
+  
+  /* Animacion */
+  @keyframes estirado {
+    0% {
+      transform: scale(1, 1);
+      color: white;
     }
     35% {
-        transform: scale(1.3, 1);
-        color: blueviolet;
+      transform: scale(1.3, 1);
+      color: blueviolet;
     }
     50% {
-        transform: scale(1.5, 1);
-        color: lightblue;
+      transform: scale(1.5, 1);
+      color: lightblue;
     }
     85% {
-        transform: scale(1.3, 1);
-        color: blueviolet;
+      transform: scale(1.3, 1);
+      color: blueviolet;
     }
-    100% { transform: scale(1, 1);
-    color: crimson;
+    100% {
+      transform: scale(1, 1);
+      color: white;
     }
   }
-
-main{
+  main {
     padding-bottom: 5%;
-}
-
-h1{
+  }
+  
+  h1 {
     font-size: 3.5rem;
     color: black;
     padding: 1%;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-}
-
-.h2{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  
+  .h2 {
     font-size: 3rem;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
     padding: 1%;
     color: black;
-}
-
-div h2{
-    padding-top: 5%;
+  }
+  
+  div h2 {
     padding-bottom: 3%;
-}
-
-section div button{
+    padding-top: 5%;
+  }
+  
+  section div button {
     color: blue;
     background-color: chocolate;
-}
-
-main button{
+  }
+  
+  main button {
     color: blue;
     background-color: chocolate;
-}
-
-/* Nombre de los productos */
-.nombreProducto{
+  }
+  
+  /* Nombre de los productos */
+  .nombreProducto {
     font-size: 2rem;
-    font-family: 'Antonio', sans-serif;
+    font-family: "Antonio", sans-serif;
     letter-spacing: 0.4rem;
-
-}
-
-
-h3{
+  }
+  
+  h3 {
     font-size: 2.5rem;
-    font-family: 'Oswald', sans-serif;
-}
-
-h4{
+    font-family: "Oswald", sans-serif;
+  }
+  
+  h4 {
     font-size: 2rem;
-}
-
-/* Lorem Terminos y Condiciones */
-footer p{
+  }
+  
+  /* Lorem Terminos y Condiciones */
+  footer p {
     font-size: 1.7rem;
-}
-
-/* Tienda */
-.tienda{
+  }
+  
+  /* Tienda */
+  .tienda {
     margin-top: 5%;
     margin-bottom: 10%;
-}
-
-.tiendaHomePage{
+  }
+  
+  .tiendaHomePage {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
     padding-bottom: 5%;
-}
-
-
-/* Talles */
-.talles{
+  }
+  
+  /* Talles */
+  .talles {
     font-size: 1.5rem;
-}
-
-/* Texto Formulario */
-.miFormulario{
+  }
+  
+  /* Texto Formulario */
+  .miFormulario {
     font-size: 2rem;
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin-top: 2%;
     padding: 1%;
-}
-
-.botonFormulario{
+  }
+  
+  .botonFormulario {
     background-color: cyan;
     color: darkmagenta;
-}
-
-/* VIP */
-#tituloVIP{
+  }
+  
+  /* VIP */
+  #tituloVIP {
     padding-top: 9%;
     color: darkslateblue;
     display: flex;
     justify-content: center;
-}
-
-#textoVIP{
+  }
+  
+  #textoVIP {
     font-size: 2rem;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
-}
-
-#botonVIP{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  
+  #botonVIP {
     color: blue;
     background-image: linear-gradient(red, white);
     font-size: 3rem;
     padding: 10px 24px;
     margin: auto;
-}
-
-/* Parrafo en el VIP */
-.textoVIP{
+  }
+  
+  /* Parrafo en el VIP */
+  .textoVIP {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 3%;
     margin-top: 2%;
-}
-
-/* Margen */
-.margenVIP{
+  }
+  
+  /* Margen */
+  .margenVIP {
     text-align: center;
-}
-
-/* Imagenes y Texto VIP */
-.claseVIP{
+  }
+  
+  /* Imagenes y Texto VIP */
+  .claseVIP {
     margin-top: 5%;
     margin-bottom: 4%;
     padding: 1%;
-}
-
-/* Mas productos tienda */
-.moreProducts{
+  }
+  
+  /* Mas productos tienda */
+  .moreProducts {
     font-size: 2rem;
     padding-bottom: 3%;
     padding-left: 1%;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
-}
-
-
-/* Texto Carrito */
-.comprameYa{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  
+  /* Texto Carrito */
+  .comprameYa {
     font-size: 2rem;
     padding: 1%;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
-}
-
-.redesSociales{
-        padding: 10px;
-        font-size: 50px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-}
-
-
-/* Display Footer */
-#seccionFooter{
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  }
+  
+  .redesSociales {
+    padding: 10px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Display Footer */
+  #seccionFooter {
     display: flex;
     justify-content: space-around;
     padding-bottom: 3%;
     background-image: linear-gradient(lightblue, white);
-}
-
-/* Terminos y Condiciones */
-#askUs{
+  }
+  
+  /* Terminos y Condiciones */
+  #askUs {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     word-spacing: 3px;
     letter-spacing: 1px;
     text-align: center;
     padding-top: 5%;
-}
-
-
-/* Texto e Iconos Redes Sociales */
-.followUs{
+  }
+  
+  /* Texto e Iconos Redes Sociales */
+  .followUs {
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 1.3%;
     padding-top: 29%;
-}
-
-#seccionRedesSociales{
+  }
+  
+  #seccionRedesSociales {
     padding-left: 5%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-
-/* Titulo Tienda (en seccion musica) */
-.storeTitle{
+    flex-direction: column;
+  }
+  
+  /* Titulo Tienda (en seccion musica) */
+  .storeTitle {
     padding-bottom: 7%;
     padding-top: 3%;
-    font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
     font-size: 3.5rem;
     padding-left: 1%;
-}
-
-/* Apple Music Spotify */
-.reproductor{
+  }
+  
+  /* Apple Music Spotify */
+  .reproductor {
     padding: 1%;
     display: inline-block;
     padding-bottom: 3%;
-}
-
-
-/* Display Tienda en Musica */
-#tiendaMusica{
+  }
+  
+  /* Display Tienda en Musica */
+  #tiendaMusica {
     display: flex;
     justify-content: space-around;
     padding-bottom: 7%;
-}
-
-/* Texto PRODUCTS */
-.shopProducts{
+  }
+  
+  /* Texto PRODUCTS */
+  .shopProducts {
     padding-bottom: 3%;
     padding-top: 7%;
-}
-
-/* TABLA TALLES */
-.tablaTalles{
+  }
+  
+  /* TABLA TALLES */
+  .tablaTalles {
     padding: 1%;
-}
-
-/* Display Tienda en Shop */
-#tiendaShop{
+  }
+  
+  /* Display Tienda en Shop */
+  #tiendaShop {
     display: flex;
     justify-content: space-around;
     padding-bottom: 7%;
     padding-top: 5%;
-}
-
-/* navbar */
-.navbar{
+  }
+  
+  /* navbar */
+  .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-}
-
-/* Texto en Carrito */
-.emptyCart{
+  }
+  
+  /* Texto en Carrito */
+  .emptyCart {
     padding-top: 7%;
-}
-
-/* Media Query Mobile */
-@media only screen and (max-width: 615px){
-    .tiendaHomePage{
-        display: flex;
-        flex-direction: column;
-        align-content: space-evenly;
-        justify-content: center;
+  }
+  
+  /* Media Query Mobile */
+  @media only screen and (max-width: 615px) {
+    .tiendaHomePage {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: space-evenly;
     }
-
-    .tiendaHomePage div{
-        text-align: center;
-        margin: 5%;
+  
+    .tiendaHomePage div {
+      text-align: center;
+      margin: 5%;
     }
-
-    h2{
-        text-align: center;
+  
+    h2 {
+      text-align: center;
     }
-
-    #seccionFooter{
-        display: flex;
-        flex-direction: column;
+  
+    #seccionFooter {
+      display: flex;
+      flex-direction: column;
     }
-
-    .followUs{
-        display: flex;
-        justify-content: center;
-        margin: 0;
+  
+    .followUs {
+      display: flex;
+      justify-content: center;
+      margin: 0;
     }
-
-    .iconosRedes{
-        display: flex;
-        justify-content: center;
+  
+    .iconosRedes {
+      display: flex;
+      justify-content: center;
     }
-
-    #askUs{
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        padding: 7%;
+  
+    #askUs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      padding: 7%;
     }
-
-    header{
-        height: 30rem;
-        background-size: 120%;
-        background-repeat: no repeat;
-        background-position: top center;
+  
+    header {
+      height: 30rem;
+      background-size: 120%;
+      background-repeat: no repeat;
+      background-position: top center;
     }
-
-    #textoLanding{
-        padding-top: 33%;
-        display: flex;
-        justify-content: center;
-        white-space: nowrap;
-        font-size: 3rem;
-        align-items: center;
+  
+    #textoLanding {
+      padding-top: 33%;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
+      font-size: 3rem;
+      align-items: center;
     }
-
-    .miMenu{
-        visibility: hidden;
+  
+    .miMenu {
+      visibility: hidden;
     }
-}
-
-/* MQ Tablet */
-@media only screen and (min-width: 615px) and (max-width: 1024px){
-    .tiendaHomePage{
-        display: flex;
-        flex-direction: column;
-        align-content: space-evenly;
-        justify-content: center;
+  }
+  /* MQ Tablet */
+  @media only screen and (min-width: 615px) and (max-width: 1024px) {
+    .tiendaHomePage {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: space-evenly;
     }
-
-    .tiendaHomePage div{
-        text-align: center;
-        margin: 5%;
+  
+    .tiendaHomePage div {
+      text-align: center;
+      margin: 5%;
     }
-
-    h2{
-        text-align: center;
+  
+    h2 {
+      text-align: center;
     }
-
-    #seccionFooter{
-        display: flex;
-        flex-direction: column;
+  
+    #seccionFooter {
+      display: flex;
+      flex-direction: column;
     }
-
-    .followUs{
-        display: flex;
-        justify-content: center;
-        margin: 0;
+  
+    .followUs {
+      display: flex;
+      justify-content: center;
+      margin: 0;
     }
-
-    .iconosRedes{
-        display: flex;
-        justify-content: center;
+  
+    .iconosRedes {
+      display: flex;
+      justify-content: center;
     }
-
-    #askUs{
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        padding: 7%;
+  
+    #askUs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      padding: 7%;
     }
-
-    header{
-        height: 30rem;
-        background-size: 120%;
-        background-repeat: no repeat;
-        background-position: top center;
+  
+    header {
+      height: 30rem;
+      background-size: 120%;
+      background-repeat: no repeat;
+      background-position: top center;
     }
-
-    #textoLanding{
-        padding-top: 18%;
-        display: flex;
-        justify-content: center;
-        white-space: nowrap;
-        font-size: 3rem;
-        align-items: center;
+  
+    #textoLanding {
+      padding-top: 18%;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
+      font-size: 3rem;
+      align-items: center;
     }
-
-}
-
-
-/* Navbar BOOTSTRAP */
-.nav-link{
-    margin-left:20px;
-}
-
-
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  }
+  /* Navbar BOOTSTRAP */
+  .nav-link {
+    margin-left: 20px;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
     transition: all ease 0.3s;
-}
-
-
-.navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover {
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .show > .nav-link:hover {
     color: black;
     background-color: red;
-}
-
-
-/* Texto en Connect */
-.connectText{
-    padding-top: 6%;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    transition: all ease 0.3s;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .show > .nav-link:hover {
+    color: black;
+    background-color: red;
+  }
+  
+  /* Texto en Connect */
+  .connectText {
     padding-bottom: 0%;
-}
+    padding-top: 6%;
+  }
+  
+  /* Spotify/AppleMusic/Youtube */
+  .seccionMultimedia {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  /* Animacion Dropdown en Navbar */
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    margin-top: 0;
+  }
+  
+  .navbar .nav-item:hover .nav-link {
+    color: #fff;
+  }
+  
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+  }
+  
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  
+  .navbar .nav-item:hover .dropdown-menu {
+    transition: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: rotateX(0deg);
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
