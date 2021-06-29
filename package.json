@@ -1,0 +1,22 @@
+{
+  "name": "MiTienda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Facundo Bozzi",
+  "license": "Facundo Bozzi Entertainment",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "bootstrap": "^5.0.0"
+  },
+  "peerDependencies": {},
+  "description": "Mi tienda hecha para un artista musical. Desarrollado para el proyecto de Coderhouse"
+}
