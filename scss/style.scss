@@ -44,10 +44,10 @@ html {
             transition: all ease 0.3s;
             font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
         
-        &:hover{
-            background-color: red;
-            color: black !important;
-        }
+            &:hover{
+                background-color: red;
+                color: black !important;
+            }
         }
 
         .submenu ul{
@@ -91,7 +91,7 @@ html {
             &:hover{
                 background-color: red;
                 color: #fff !important;
-            }
+                }
         }
 
         .submenu ul{
@@ -582,23 +582,23 @@ footer p{
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
     transition: all ease 0.3s;
+    text-shadow: 0 0 2px #000;
+    &:hover{
+        color: black;
+        background-color: red;
+        text-shadow: 0 0 0 black;
+    }
 }
 
-
-.navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover {
-    color: black;
-    background-color: red;
-}
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     transition: all ease 0.3s;
+    &:hover{
+        color: white;
+        background-color: red;
+    }
 }
 
-
-.navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .show>.nav-link:hover {
-    color: black;
-    background-color: red;
-}
 
 
 /* Texto en Connect */
