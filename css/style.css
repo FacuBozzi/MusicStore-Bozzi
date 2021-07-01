@@ -8,6 +8,14 @@ html {
   padding: 0%;
 }
 
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 /* Logo */
 .logo-image {
   width: 150px;
@@ -186,11 +194,12 @@ h1 {
   font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
 }
 
-.h2 {
+.outfits-march {
   font-size: 3rem;
   font-family: "Helvetica Neue", "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
   padding: 1%;
   color: black;
+  text-align: center;
 }
 
 div h2 {
@@ -206,13 +215,6 @@ section div button {
 main button {
   color: blue;
   background-color: chocolate;
-}
-
-/* Nombre de los productos */
-.nombre-producto {
-  font-size: 2rem;
-  font-family: "Antonio", sans-serif;
-  letter-spacing: 0.4rem;
 }
 
 h3 {
@@ -342,8 +344,8 @@ footer p {
 
 .redes-sociales {
   padding: 10px;
-  font-size: 50px;
-  width: 50px;
+  font-size: 70px;
+  width: 70px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -354,7 +356,7 @@ footer p {
   display: flex;
   justify-content: space-around;
   padding-bottom: 3%;
-  background-image: linear-gradient(lightblue, white);
+  background-color: #111;
 }
 
 /* Terminos y Condiciones */
@@ -364,7 +366,8 @@ footer p {
   word-spacing: 3px;
   letter-spacing: 1px;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 6%;
+  color: #8b8b8b;
 }
 
 /* Texto e Iconos Redes Sociales */
@@ -372,7 +375,8 @@ footer p {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 1.3%;
-  padding-top: 29%;
+  padding-top: 24%;
+  color: #8b8b8b;
 }
 
 #seccion-redes-sociales {
