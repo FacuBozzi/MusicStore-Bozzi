@@ -200,6 +200,7 @@ h1 {
   padding: 1%;
   color: black;
   text-align: center;
+  text-shadow: 1px #fff;
 }
 
 div h2 {
@@ -270,7 +271,47 @@ footer p {
 
 /* Talles */
 .talles {
-  font-size: 1.5rem;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  min-width: 400px;
+  font-family: "Quicksand", sans-serif;
+  padding-top: 40px;
+}
+
+.table-div {
+  display: flex;
+  justify-content: center;
+}
+
+.talles thead tr {
+  background-color: #f81a5d;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 2rem;
+}
+
+.talles th,
+.talles td {
+  padding: 12px 15px;
+  font-size: 1.7rem;
+  width: 28rem;
+}
+
+.talles tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.talles tbody tr:nth-of-type(even) {
+  background-color: #faf5f5;
+}
+
+.talles tbody tr:last-of-type {
+  border-bottom: 2px solid #f81a5d;
 }
 
 /* Texto Formulario */
@@ -415,6 +456,7 @@ footer p {
   padding-top: 10%;
   text-align: center;
   font-size: 4rem;
+  letter-spacing: 1px;
 }
 
 /* TABLA TALLES */
@@ -627,6 +669,30 @@ footer p {
   visibility: visible;
   top: 100%;
   transform: rotateX(0deg);
+}
+
+.main-index {
+  background-image: url("https://wallpaperbat.com/img/38158-white-aesthetic-wallpaper-desktop-hd.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shop-body {
+  background-image: url("https://www.zastavki.com/pictures/1024x768/2013/Winter__037578_1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.connect-body {
+  background-image: url("https://c0.wallpaperflare.com/preview/195/767/607/normandy-france-black-and-white-loneliness.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
