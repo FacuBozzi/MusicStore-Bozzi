@@ -34,7 +34,7 @@
   <title>FULL SEND | VIP</title>
 </head>
 
-<body>
+<body class="body-vip">
 
 
   <div class="navContainer">
@@ -81,28 +81,44 @@
     </nav>
   </div>
 
-    <!-- Linea Horizontal -->
-    <hr>
 
     <!-- Hacete socio del club vip -->
-    <h1 id="titulo-vip">BECAME AN EXCLUSIVE MEMBER FOR $20 A MONTH!</h1>
+    <h1 id="titulo-vip">BECOME AN EXCLUSIVE MEMBER.</h1>
+
 
     <section class="clase-vip">
-        <p id="texto-vip">See behind the scenes and get exclusive merch with our premium account.</p>
+      <p id="texto-vip">See behind the scenes and get exclusive merch with our premium account.</p>
 
-        <!-- Imagenes -->
-        <img src="media/hoodiemalemodel.jpg" alt="Male Model">
-        <img src="media/hoodiefemalemodel.jpg" alt="Female Model" height="600" width="600">
+      <!-- Carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="media/trippieslider.jpg"
+              class="d-block w-75" alt="trippie photo shoot">
+          </div>
+          <div class="carousel-item">
+            <img src="media/trippieshowslider.jpg" class="d-block w-75" alt="trippie performing">
+          </div>
+          <div class="carousel-item">
+            <img src="media/trippieredredslider.jpg" class="d-block w-75" alt="trippie performing">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
-
     <!-- <button>Hacete Miembro</button> -->
-    <div class="margen-vip">
-        <a href="https://patreon.com"><button id="boton-vip">BECAME A MEMBER</button></a>
+    <div style="padding-top: 1%; padding-bottom: 4%;" class="col-lg-6 text-center m-auto mt-5">
+      <a href="https://www.patreon.com"><button class="btn1" id="botonVIP">Become a Member</button></a>
     </div>
-
-
-    <p class="texto-vip">For secret content, merch, music, snippets and more!</p>
 
     <!-- Javascript -->
 

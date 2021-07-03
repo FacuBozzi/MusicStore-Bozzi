@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
   <title>FULL SEND | MUSIC</title>
 </head>
-<body>
+<body class="music-body">
 
   <div class="navContainer">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -79,8 +79,6 @@
     </nav>
   </div>
     
-    <!-- Linea Horizontal -->
-    <hr>
     
     <!-- Anuncio Nueva Musica -->
     <section>
@@ -98,47 +96,63 @@
             src="https://embed.music.apple.com/us/album/lifes-a-trip/1421575620" class="reproductor"></iframe>
         
           <!-- Youtube -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Krycppt1ZqI" title="YouTube video player"
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/k0X1ZBS-GUc" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen class="reproductor"></iframe>
         </div>
-
-        <!-- Linea Horizontal -->
-        <hr>
     
-        <!-- Tienda -->
-        <h2 class="store-title">STORE</h2>
-
         
-        <!-- Articulos -->
-        <section id="tienda-musica">
-            <div><img src="" alt="articulo01">
-                <p class="nombre-producto">TEXT TEXT</p>
-                <p id="precio-producto">$xx,xx</p>
-                <button>ADD TO CART</button>
-            </div>
-            
-            <div><img src="" alt="articulo02">
-                <p class="nombre-producto">TEXT TEXT</p>
-                <p id="precio-producto">$xx,xx</p>
-                <button>ADD TO CART</button>
-            </div>
-            
-            <div><img src="" alt="articulo03">
-                <p class="nombre-producto">TEXT TEXT</p>
-                <p id="precio-producto">$xx,xx</p>
-                <button>ADD TO CART</button>
-            </div>
-            
-            <div><img src="" alt="articulo04">
-                <p class="nombre-producto">TEXT TEXT</p>
-                <p id="precio-producto">$xx,xx</p>
-                <button>ADD TO CART</button>
-            </div>
-        </section>
+        <!-- Titulo products -->
+        <div> <h2 style="padding-top: 5%;" class="outfits-march">LAST COLLECTION</h2> </div>
 
-        <!-- Ir a la tienda completa -->
-        <a href="shop.html" class="more-products">More Products</a>
+        <!-- Articulos -->
+        <section class="product">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light mb-2">
+                  <div class="card-body">
+                    <img
+                      src="https://images.stockx.com/images/OFF-WHITE-Caravaggio-Square-Over-Hoodie-Black-Multicolor.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1611193831"
+                      class="img-fluid" alt="articulo01">
+                  </div>
+                </div>
+                <h6>BLACK HOODIE</h6>
+                <p>$49.99</p>
+              </div>
+              <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light mb-2">
+                  <div class="card-body">
+                    <img src="media/whitehoodie.jpg" class="img-fluid" alt="articulo01">
+                  </div>
+                </div>
+                <h6>WHITE HOODIE</h6>
+                <p>$49.99</p>
+              </div>
+              <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light mb-2">
+                  <div class="card-body">
+                    <img src="media/fullsendhoodie.jpg" class="img-fluid" alt="articulo01">
+                  </div>
+                </div>
+                <h6>FULL SEND HOODIE</h6>
+                <p>$49.99</p>
+              </div>
+              <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light mb-2">
+                  <div class="card-body">
+                    <img src="media/fullsendshirt.jpg" class="img-fluid" alt="articulo01">
+                  </div>
+                </div>
+                <h6>FULL SEND SHIRT</h6>
+                <p>$19.99</p>
+              </div>
+              <div style="padding-bottom: 3%;" class="col-lg-6 text-center m-auto mt-5">
+                <a href="shop.html"><button class="btn1">More Products</button></a>
+              </div>
+            </div>
+          </div>  
+        </section>
 
 
     </section>

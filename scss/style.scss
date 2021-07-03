@@ -178,7 +178,8 @@ nav{
 
 /* Texto Listen Pagina Musica */
 .listen{
-    padding-top: 7%;
+    @include mixins.paddingvertical(3%, 7%);
+    text-align: center;
 }
 
 
@@ -353,23 +354,17 @@ footer p{
 /* VIP */
 #titulo-vip{
     padding-top: 9%;
-    color: darkslateblue;
+    color: #111;
     @include mixins.flexbox(flex, center);
 }
 
 #texto-vip{
     font-size: 2rem;
     font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
+    text-align: center;
+    @include mixins.paddingvertical(3%, 1%);
 }
 
-#boton-vip{
-    color: variables.$colorbotones;
-    background-image: linear-gradient(red, white);
-    font-size: 3rem;
-    padding: 10px 24px;
-    margin: auto;
-}
 
 /* Parrafo en el VIP */
 .texto-vip{
@@ -379,17 +374,6 @@ footer p{
     margin-top: 2%;
 }
 
-/* Margen */
-.margen-vip{
-    text-align: center;
-}
-
-/* Imagenes y Texto VIP */
-.clase-vip{
-    margin-top: 5%;
-    margin-bottom: 4%;
-    padding: variables.$padding;
-}
 
 /* Mas productos tienda */
 .more-products{
@@ -491,7 +475,7 @@ footer p{
 /* Display Tienda en Shop */
 #tienda-shop{
     @include mixins.flexbox(flex, space-around);
-    @include mixins.paddingvertical(7%, 5%);
+    @include mixins.paddingvertical(7%, 3%);
 }
 
 /* navbar */
@@ -734,3 +718,28 @@ footer p{
     transition: 0.5s;
 }
 
+.music-body {
+    background-image: url("https://www.pixel4k.com/wp-content/uploads/2019/03/snow-tree-minimal-4k_1551643550.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Carousel*/
+.carousel-inner img {
+    margin: auto;
+  }
+
+.carousel-control-next, .carousel-control-prev{
+    width: 35%;
+}
+
+.body-vip{
+    background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/10/minimalist-mountains-black-and-white-4k_1540749002.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
