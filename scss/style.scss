@@ -394,7 +394,7 @@ footer p{
     font-size: 2rem;
     padding: variables.$padding;
     font-family: 'Helvetica Neue', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-
+    text-align: center;
 }
 
 .redes-sociales{
@@ -494,6 +494,7 @@ footer p{
 /* Texto en Carrito */
 .empty-cart{
     padding-top: 7%;
+    text-align: center;
 }
 
 
@@ -590,6 +591,13 @@ footer p{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.carrito-body{
+    background-image: url("https://wallpaperaccess.com/full/1973706.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Scrollbar Personalizado */
