@@ -760,6 +760,76 @@ footer p{
     text-transform: uppercase;
 }
 
+/* 404 */
+.body-404{
+    background-image: url(../media/arbolito.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+  
+svg {
+    font: 16em 'Monoton';
+    width: 100vw;
+    height: 60vh;
+}
+  
+.content{
+    text-align: center;
+}
+  
+.h1-404{
+    text-align: center;
+    font: 3em 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(248, 26, 92);
+    opacity: 1;
+}
+
+  
+.text-404 {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 8% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 1%;
+      animation: stroke-offset 5.5s infinite linear;
+}
+  
+.text-404:nth-child(1){
+      stroke: #1c234d;
+      animation-delay: -1;
+}
+  
+.text-404:nth-child(2){
+      stroke: #315b2c;
+      animation-delay: -2s;
+}
+  
+.text-404:nth-child(3){
+      stroke: #2f8f7f;
+      animation-delay: -3s;
+}
+  
+.text-404:nth-child(4){
+      stroke: #2f8f7f;
+      animation-delay: -4s;
+}
+  
+.text-404:nth-child(5){
+      stroke: #da2717;
+      animation-delay: -5s;
+}
+  
+@keyframes stroke-offset{
+      100% {
+      stroke-dashoffset: -35%;
+    }
+}
+
+
 
 /* Media Query Mobile */
 @media only screen and (max-width: 615px){
@@ -879,5 +949,4 @@ footer p{
         font-size: 3rem;
         align-items: center;
     }
-
 }
