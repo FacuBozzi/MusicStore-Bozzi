@@ -954,6 +954,10 @@ svg {
     padding-bottom: 0rem;
   }
 
+  .listen {
+    padding-top: 15%;
+  }
+
   header {
     height: 30rem;
     background-size: 120%;
@@ -1089,6 +1093,10 @@ svg {
 
   .shop-products {
     padding-top: 15%;
+  }
+
+  .listen {
+    padding-top: 11%;
   }
 
   header {
