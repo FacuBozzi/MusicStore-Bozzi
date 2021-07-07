@@ -176,7 +176,7 @@ nav{
     font-size: variables.$headertamanio - 25rem;
     color: white;
     text-align: center;
-    padding-top: 20%;
+    @include mixins.paddingvertical(30rem,30rem);
 
 }
 
@@ -256,7 +256,7 @@ h4{
     font-size: 2rem;
 }
 
-/* Lorem Terminos y Condiciones */
+/* Terminos y Condiciones */
 footer p{
     font-size: 1.7rem;
 }
@@ -397,6 +397,7 @@ footer p{
     text-align: center;
 }
 
+/*Iconos rede sociales*/
 .redes-sociales{
         padding: 10px;
         font-size: 70px;
@@ -410,7 +411,7 @@ footer p{
 /* Display Footer */
 #seccion-footer{
     @include mixins.flexbox(flex, space-around);
-    padding-bottom: 3%;
+    height: 22rem;
     background-color: #111;
 }
 
@@ -421,7 +422,15 @@ footer p{
     word-spacing: 3px;
     letter-spacing: 1px;
     text-align: center;
-    padding-top: 6%;
+    padding-top: 9rem;
+    color: #8b8b8b;
+}
+#email-us{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-align: center;
     color: #8b8b8b;
 }
 
@@ -431,7 +440,6 @@ footer p{
     text-align: center;
     font-size: 3.5rem;
     margin-bottom: 1.3%;
-    padding-top: 24%;
     color: #8b8b8b;
 }
 
@@ -439,6 +447,7 @@ footer p{
     padding-left: 5%;
     @include mixins.flexbox(flex, center);
     flex-direction: column;
+    padding-top: 2rem;
 }
 
 /* Titulo Tienda (en seccion musica) */
@@ -868,6 +877,10 @@ svg {
 
 /* Media Query Mobile */
 @media only screen and (max-width: 615px){
+    .logo-fullsend{
+    width: 90px;
+    }
+
     .navbar .nav-item{
         text-align: center;
     }
@@ -882,6 +895,7 @@ svg {
 
     html {
         font-size: 45%;
+        padding: 0%;
     }
 
     .navbar-light .navbar-nav .nav-link.active {
@@ -907,21 +921,56 @@ svg {
     #seccion-footer{
         display: flex;
         flex-direction: column;
+        height: 22rem;
     }
+
 
     .follow-us{
         @include mixins.flexbox(flex, center);
         margin: 0;
+        font-size: 3rem;
     }
 
     .iconos-redes{
         @include mixins.flexbox(flex, center);
     }
+    
+    #seccion-redes-sociales{
+        padding-top: 3rem;
+        padding-left: 0;
+    }
+
+    .redes-sociales{
+        padding: 10px;
+        font-size: 45px;
+        width: 45px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
 
     #ask-us{
-        @include mixins.flexbox(flex, center);
-        flex-wrap: nowrap;
-        padding: 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #8b8b8b;
+        padding-top: 0;
+        @include mixins.flexbox(flex,center);
+    }
+    #email-us{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #8b8b8b;
+        @include mixins.flexbox(flex,center);
+    }
+
+    .preguntas{
+        padding-bottom: 0rem;
     }
 
     header{
@@ -932,7 +981,7 @@ svg {
     }
 
     #texto-landing{
-        padding-top: 33%;
+        padding-top: 15rem;
         @include mixins.flexbox(flex, center);
         white-space: nowrap;
         font-size: 3rem;
@@ -956,6 +1005,10 @@ svg {
 
 /* MQ Tablet */
 @media only screen and (min-width: 615px) and (max-width: 1024px){
+    .logo-fullsend{
+        width: 110px;
+    }
+
     .navbar .nav-item{
         text-align: center;
     }
@@ -970,7 +1023,7 @@ svg {
     }
 
     html {
-        font-size: 45%;
+        font-size: 55%;
     }
 
     .navbar-light .navbar-nav .nav-link.active {
@@ -995,35 +1048,71 @@ svg {
     #seccion-footer{
         display: flex;
         flex-direction: column;
+        height: 22rem;
     }
+
 
     .follow-us{
         @include mixins.flexbox(flex, center);
         margin: 0;
+        font-size: 3rem;
     }
 
     .iconos-redes{
         @include mixins.flexbox(flex, center);
     }
+    
+    #seccion-redes-sociales{
+        padding-top: 3rem;
+        padding-left: 0;
+    }
+
+    .redes-sociales{
+        padding: 10px;
+        font-size: 50px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
 
     #ask-us{
-        @include mixins.flexbox(flex, center);
-        flex-wrap: nowrap;
-        padding: 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #8b8b8b;
+        padding-top: 0;
+        @include mixins.flexbox(flex,center);
     }
+    #email-us{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #8b8b8b;
+        @include mixins.flexbox(flex,center);
+    }
+
+    .preguntas{
+        padding-bottom: 0rem;
+    }
+
 
     header{
         height: variables.$headertamanio;
         background-size: 120%;
         background-repeat: no repeat;
         background-position: top center;
+        position: relative;
     }
 
     #texto-landing{
-        padding-top: 18%;
+        padding-top: 15rem;
         @include mixins.flexbox(flex, center);
         white-space: nowrap;
         font-size: 3rem;
-        align-items: center;
     }
 }
