@@ -491,6 +491,10 @@ footer p{
     z-index: 2;
 }
 
+.nav-pantalla-chica{
+    visibility: hidden;
+}
+
 /* Texto en Carrito */
 .empty-cart{
     padding-top: 7%;
@@ -545,6 +549,7 @@ footer p{
     visibility: hidden;
     transition: .3s;
     margin-top: 0;
+    text-align: center;
 }
 
 .navbar .nav-item:hover .nav-link {
@@ -568,6 +573,37 @@ footer p{
     top: 100%;
     transform: rotateX(0deg);
 }
+
+.sidebar, .overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar{
+    left: -100%;
+    max-width: 300px;
+    transition: all ease 0.25s;
+}
+
+.overlay{
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    visibility: hidden;
+}
+
+.main-navigation.active .sidebar{
+    left: 0;
+}
+.main-navigation.active .overlay{
+    visibility: visible;
+}
+
+
+
 
 .main-index{
     background-image: url("https://wallpaperbat.com/img/38158-white-aesthetic-wallpaper-desktop-hd.jpg");
@@ -830,9 +866,28 @@ svg {
 }
 
 
-
 /* Media Query Mobile */
 @media only screen and (max-width: 615px){
+    .navbar .nav-item{
+        text-align: center;
+    }
+
+    .nav-item{
+        background: #111;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    html {
+        font-size: 45%;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active {
+        color: white;
+    }
+
     .tienda-homepage{
         @include mixins.flexbox(flex, center);
         flex-direction: column;
@@ -847,6 +902,7 @@ svg {
     h2{
         text-align: center;
     }
+    
 
     #seccion-footer{
         display: flex;
@@ -900,6 +956,27 @@ svg {
 
 /* MQ Tablet */
 @media only screen and (min-width: 615px) and (max-width: 1024px){
+    .navbar .nav-item{
+        text-align: center;
+    }
+
+
+    .nav-item{
+        background: #111;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    html {
+        font-size: 45%;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active {
+        color: white;
+    }
+
     .tienda-homepage{
         @include mixins.flexbox(flex, center);
         flex-direction: column;
