@@ -514,8 +514,8 @@ footer p {
 
 /* Texto en Connect */
 .connect-text {
-  padding-bottom: 0%;
-  padding-top: 6%;
+  padding-bottom: 0;
+  padding-top: 11rem;
   text-align: center;
 }
 
@@ -609,7 +609,6 @@ footer p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .carrito-body {
@@ -709,7 +708,7 @@ footer p {
 /*Form*/
 .wrapper {
   position: absolute;
-  top: 50%;
+  top: 37rem;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -969,6 +968,23 @@ svg {
     padding-bottom: 6%;
   }
 
+  .connect-text {
+    padding-top: 8rem;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 46rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
   header {
     height: 30rem;
     background-size: 120%;
@@ -1112,6 +1128,32 @@ svg {
 
   #titulo-vip {
     padding-top: 15%;
+  }
+
+  .connect-body {
+    background-image: url("https://wallpaperaccess.com/full/753391.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22rem;
+  }
+
+  .connect-text {
+    padding-top: 12rem;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 45rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   header {
