@@ -981,6 +981,16 @@ svg {
         padding-top: 15%;
     }
 
+    #titulo-vip{
+        font-size: 2.5rem;
+        @include mixins.paddingvertical(2%,15%);
+    }
+
+    #texto-vip{
+        font-size: 1.5rem;
+        padding-bottom: 6%;
+    }
+
     header{
         height: variables.$headertamanio;
         background-size: 120%;
@@ -1114,6 +1124,10 @@ svg {
 
     .listen{
         padding-top: 11%;
+    }
+
+    #titulo-vip{
+        padding-top: 15%;
     }
 
     header{
