@@ -891,6 +891,10 @@ svg {
     text-align: center;
   }
 
+  .shop-products {
+    padding-top: 22%;
+  }
+
   #seccion-footer {
     display: flex;
     flex-direction: column;
@@ -1081,6 +1085,10 @@ svg {
 
   .preguntas {
     padding-bottom: 0rem;
+  }
+
+  .shop-products {
+    padding-top: 15%;
   }
 
   header {
