@@ -989,6 +989,13 @@ svg {
     padding-top: 10rem;
   }
 
+  .product h6 {
+    font-size: 1.67rem;
+  }
+  .product p {
+    font-size: 1.55rem;
+  }
+
   header {
     height: 30rem;
     background-size: 120%;
@@ -1132,6 +1139,13 @@ svg {
 
   #titulo-vip {
     padding-top: 15%;
+  }
+
+  .product h6 {
+    font-size: 1.8rem;
+  }
+  .product p {
+    font-size: 1.69rem;
   }
 
   .connect-body {
