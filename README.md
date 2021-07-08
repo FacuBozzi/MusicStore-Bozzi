@@ -1,6 +1,6 @@
 # FULL SEND
 
-Full Send es la marca de ropa un artista llamado Trippie Redd. Esta tambien proporciona publicidad de su música y servicios como membresías para ver contenido exclusivo.
+Full Send es la marca de ropa para un artista llamado Trippie Redd. Esta tambien proporciona publicidad de su música y servicios como membresías para ver contenido exclusivo.
 
 ## Instalación
 
