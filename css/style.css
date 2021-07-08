@@ -485,7 +485,7 @@ footer p {
 
 /* Texto en Carrito */
 .empty-cart {
-  padding-top: 7%;
+  padding-top: 15rem;
   text-align: center;
 }
 
@@ -985,6 +985,10 @@ svg {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
+  .empty-cart {
+    padding-top: 10rem;
+  }
+
   header {
     height: 30rem;
     background-size: 120%;
@@ -1154,6 +1158,10 @@ svg {
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .empty-cart {
+    padding-top: 10rem;
   }
 
   header {
